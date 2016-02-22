@@ -9,6 +9,9 @@ alias -- -="cd -"
 alias dt="cd ~/Desktop"
 alias dl="cd ~/Downloads"
 alias dev="cd ~/Developer"
+alias bitb="cd ~/Developer/bitbucket.org"
+alias github="cd ~/Developer/github.com"
+alias gitlab="cd ~/Developer/gitlab.com"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
