@@ -25,3 +25,8 @@ colorscheme solarized
 if has('mouse')
     set mouse=a
 endif
+
+" NERDTree
+let NERDChristmasTree=1
+let NERDTreeShowHidden=1
+let NERDTreeIgnore=['\.vim$', '\~$', '\.git$', '.DS_Store']
