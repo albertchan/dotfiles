@@ -9,9 +9,10 @@ alias -- -="cd -"
 alias dt="cd ~/Desktop"
 alias dl="cd ~/Downloads"
 alias dev="cd ~/Developer"
-alias bitb="cd ~/Developer/bitbucket.org"
-alias github="cd ~/Developer/github.com"
-alias gitlab="cd ~/Developer/gitlab.com"
+alias bb="cd ~/Developer/bitbucket.org"
+alias gh="cd ~/Developer/github.com"
+alias gl="cd ~/Developer/gitlab.com"
+alias py="python3"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
