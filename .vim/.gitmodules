@@ -1,0 +1,42 @@
+[submodule "bundle/ack"]
+	path = bundle/ack
+	url = https://github.com/mileszs/ack.vim.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
+[submodule "bundle/delimitMate.vim"]
+	path = bundle/delimitMate.vim
+	url = https://github.com/vim-scripts/delimitMate.vim.git
+[submodule "bundle/minibufexpl.vim"]
+	path = bundle/minibufexpl.vim
+	url = https://github.com/fholgado/minibufexpl.vim.git
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = https://github.com/bling/vim-airline.git
+[submodule "bundle/vim-better-whitespace"]
+	path = bundle/vim-better-whitespace
+	url = https://github.com/ntpeters/vim-better-whitespace.git
+[submodule "bundle/vim-colors-solarized"]
+	path = bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle/vim-fugitive"]
+	path = bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "bundle/vim-gitgutter"]
+	path = bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "bundle/vim-go"]
+	path = bundle/vim-go
+	url = https://github.com/fatih/vim-go.git
+[submodule "bundle/vim-indent-lines"]
+	path = bundle/vim-indent-lines
+	url = https://github.com/Yggdroot/indentLine.git
+[submodule "bundle/vim-json"]
+	path = bundle/vim-json
+	url = https://github.com/elzr/vim-json.git
