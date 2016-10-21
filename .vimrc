@@ -21,6 +21,10 @@ set ruler	" show the cursor position all the time
 let g:solarized_termcolors=256
 colorscheme solarized
 
+" indentLine config
+let g:indentLine_char = '|'
+let g:indentLine_color_term = 236
+
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
     set mouse=a
