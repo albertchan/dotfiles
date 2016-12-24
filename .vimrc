@@ -4,17 +4,24 @@ execute pathogen#infect()
 filetype plugin indent on
 syntax on
 
-" Use Vim settings, rather than Vi settings
+" Vim settings
 set nocompatible
+set noswapfile
 
+" Editor settings
 set background=dark
 set encoding=utf-8
 set number
-set autoindent
-set smarttab
-set tabstop=4
-set expandtab	" expand tab to spaces
 set ruler	" show the cursor position all the time
+set autoindent
+set backspace=2 " make backspace work like most other apps
+set smarttab
+set shiftwidth=2
+set tabstop=2
+set expandtab	" expand tab to spaces
+set nowrap
+set hlsearch
+set spell spelllang=en_us
 
 " Solarized color scheme
 " see https://github.com/altercation/vim-colors-solarized
@@ -30,7 +37,16 @@ if has('mouse')
     set mouse=a
 endif
 
-" NERDTree
+" indentLine config
+let g:indentLine_char = '|'
+let g:indentLine_color_term = 236
+
+" NERDTree config
 let NERDChristmasTree=1
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['\.vim$', '\~$', '\.git$', '.DS_Store']
+
+" Keyboar mappings
+vmap <C-x> :!pbcopy<CR>
+vmap <C-c> :w !pbcopy<CR><CR>
+
