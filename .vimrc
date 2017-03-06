@@ -1,27 +1,38 @@
-" Infect with pathogen for plugins
-" see https://github.com/tpope/vim-pathogen
-execute pathogen#infect()
+" Use Vim settings, rather than Vi settings
+set nocompatible
+filetype off
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'Valloric/YouCompleteMe'
+
+" All of your Plugins must be added before the following line
+call vundle#end() " required
+
 filetype plugin indent on
 syntax on
 
-" Vim settings
-set nocompatible
-set noswapfile
-
 " Editor settings
 set background=dark
+set backspace=2 " make backspace work like most other apps
 set encoding=utf-8
+set hlsearch
+set noswapfile
+set nowrap
 set number
 set ruler	" show the cursor position all the time
+set spell spelllang=en_us
+
+" Indentation and spacing
 set autoindent
-set backspace=2 " make backspace work like most other apps
 set smarttab
 set shiftwidth=2
 set tabstop=2
 set expandtab	" expand tab to spaces
-set nowrap
-set hlsearch
-set spell spelllang=en_us
 
 " Solarized color scheme
 " see https://github.com/altercation/vim-colors-solarized
