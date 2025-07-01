@@ -19,21 +19,15 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     OS="macOS"
 	xcode-select --install
-	brew update && \
-	# brew install coreutils && \
-	# brew install findutils && \
-	# brew install gnu-sed && \
-	# brew install gnu-tar && \
-	# brew install gawk && \
-	# brew install grep && \
-	# brew install bash-completion@2 && \
-	# brew install bash && \
-	brew install rsync;
-	brew install fzf;
-	brew install postgresql;
-	brew install python3;
-	brew install neovim;
-	brew services start postgresql;
+	brew update
+	brew install curl rsync wget git
+	brew install bash-completion@2 fzf 
+	brew install neovim
+	brew install openssl@3
+	brew install postgresql
+	brew install python3
+	brew services start postgresql
+	sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 else
     echo "Unsupported OS: $OSTYPE"
     exit 1
@@ -41,7 +35,7 @@ fi
 
 function doIt() {
 	rsync --exclude ".DS_Store" --exclude ".git/" --exclude ".idea" \
-	    --exclude ".gitignore" --exclude "bootstrap.sh" \
+	    --exclude ".gitignore" --exclude "install.sh" \
 		--exclude "README.md" --exclude "LICENSE" -avh --no-perms . ~;
 }
 
