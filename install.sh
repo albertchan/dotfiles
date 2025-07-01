@@ -21,11 +21,12 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 	xcode-select --install
 	brew update
 	brew install curl rsync wget git
-	brew install bash-completion@2 fzf 
+	brew install bash-completion@2 fd fzf luajit
 	brew install neovim
 	brew install openssl@3
 	brew install postgresql
 	brew install python3
+	brew install ripgrep
 	brew services start postgresql
 	sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 else
