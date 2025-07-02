@@ -10,18 +10,22 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
 	sudo apt-get update && sudo apt-get install -y rsync \
 		build-essential \
 		bash-completion \
-		bash-completion-extras \
 		curl \
 		fzf \
 		git \
+		golang \
 		postgresql postgresql-contrib \
 		python3;
+	curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+	sudo rm -rf /opt/nvim
+	sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     OS="macOS"
 	xcode-select --install
 	brew update
 	brew install curl rsync wget git
 	brew install bash-completion@2 fd fzf luajit
+	brew install go 
 	brew install neovim
 	brew install openssl@3
 	brew install postgresql
