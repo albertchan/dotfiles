@@ -17,7 +17,6 @@ return {
     require("mason-lspconfig").setup({
       ensure_installed = {
         "tsserver",
-        "clangd",
         "gopls",
         "lua_ls",
       },

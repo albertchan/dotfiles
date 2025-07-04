@@ -15,7 +15,9 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
 		git \
 		golang \
 		postgresql postgresql-contrib \
-		python3;
+		python3 \
+		ripgrep;
+	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 	curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
 	sudo rm -rf /opt/nvim
 	sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
@@ -31,6 +33,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 	brew install postgresql
 	brew install python3
 	brew install ripgrep
+	brew install rust
 	brew services start postgresql
 	sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 else
