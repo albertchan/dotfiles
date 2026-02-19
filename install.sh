@@ -19,6 +19,7 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
 		ripgrep;
 	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 	curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
 	sudo rm -rf /opt/nvim
 	sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
 elif [[ "$OSTYPE" == "darwin"* ]]; then
@@ -36,6 +37,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 	brew install rust
 	brew services start postgresql
 	sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
 else
     echo "Unsupported OS: $OSTYPE"
     exit 1
