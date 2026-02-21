@@ -29,13 +29,14 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 	brew install curl rsync wget git
 	brew install bash-completion@2 fd fzf luajit
 	brew install go 
+	brew install hugo
 	brew install neovim
 	brew install openssl@3
-	brew install postgresql
+	brew install postgresql@18
 	brew install python3
 	brew install ripgrep
 	brew install rust
-	brew services start postgresql
+	brew services start postgresql@18
 	sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
 else
