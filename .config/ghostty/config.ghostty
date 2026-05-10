@@ -1,0 +1,19 @@
+# Ghostty Configuration
+# https://ghostty.org/docs/config
+
+# Aesthetics
+cursor-style = block
+theme = TokyoNight Night
+
+# Typography
+font-family = "JetBrains Mono"
+font-size = 12
+
+# Window
+window-width = 120
+window-height = 60
+window-padding-x = 4
+window-padding-y = 4
+window-padding-balance = true
+window-position-x = 0
+window-position-y = 0
