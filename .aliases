@@ -3,26 +3,22 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-alias -- -="cd -"
 
 # Shortcuts
 alias hm="cd ~/"
 alias dt="cd ~/Desktop"
 alias dl="cd ~/Downloads"
 alias dev="cd ~/Developer"
-alias bb="cd ~/Developer/bitbucket.org"
 alias gh="cd ~/Developer/github.com"
 alias gl="cd ~/Developer/gitlab.com"
 
 # Apps
-alias py="python3"
 alias pgstart="postgres -D /usr/local/var/postgres"
-
-# Docker shortcuts
-alias dockerenv="eval '$(docker-machine env default)'"
-alias dockersetup="docker-machine start default &> /dev/null; eval $(docker-machine env default)"
-alias dockerrmall="docker stop $(docker ps -a -q); docker rm $(docker ps -a -q)"
-alias dockerrmallimgd='docker rmi $(docker images -f "dangling=true" -q)'
+alias pg-start="sudo service psotgresql start"
+alias pg-run="sudo -u postgres psql"
+alias py="python3"
+alias status="service --status-all"
+alias vim="nvim"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
