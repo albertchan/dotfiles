@@ -3,6 +3,7 @@
 
 # Aesthetics
 cursor-style = block
+shell-integration-features = no-cursor
 theme = TokyoNight Night
 
 # Typography
